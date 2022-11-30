@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "compile:sass": "sass .\\src\\index.scss .\\dist\\index.css",
     "build": "webpack --mode=production --define-process-env-node-env=production",
     "watch": "webpack --watch",
     "build:dev": "webpack --mode=development",
