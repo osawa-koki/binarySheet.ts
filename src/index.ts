@@ -1,8 +1,12 @@
-import { Logger, LoggerLevel } from './Logger';
+import { RemoveClassedElements } from './Logic/RemoveClassedElements';
+
+import { Logger } from './Logger';
 const logger = new Logger();
 
 (() => {
   const fileButton = document.getElementById('fileButton');
+
+  const byteArray: number[] = [];
 
   if (fileButton === null) {
     logger.Error("'fileButton' is null");
@@ -21,26 +25,21 @@ const logger = new Logger();
     }
     const file = files[0];
     const reader = new FileReader();
-    reader.readAsArrayBuffer(file);
-    reader.onload = () => {
-      console.log(1);
-
-      // byteObjects.splice(0);
-      // loading.classList.add("loading");
-      // //exportImg.classList.remove("unable");
-      // removeChildren(editerX);
-      // const dataView = new DataView(reader.result);
-      // if (FILE_SIZE_CONFIRM_LIMIT < dataView.byteLength && !window.confirm(`ファイルサイズが「${dataView.byteLength}」バイトあります。\n処理を続行しますか???`)) {
-      //   loading.classList.remove("loading");
-      //   return;
-      // };
-      // fileName.textContent = file.name;
-      // try {
-      //   doNtimes(dataView.byteLength, i => readOutByte(dataView, i));
-      // } catch (ex) {
-      //   exportImg.classList.add("unable");
-      // }
+    reader.onload = function() {
+      RemoveClassedElements('cell');
+      byteArray.splice(0);
+      const arrayBuffer = this.result;
+      if (arrayBuffer === null) {
+        logger.Error("'arrayBuffer' is null");
+        return;
+      }
+      const dataView = new DataView((arrayBuffer as ArrayBuffer));
+      for (let i = 0; i < dataView.byteLength; i++) {
+        byteArray.push(dataView.getUint8(i));
+      }
+      logger.Info(`Loaded ${byteArray.length} bytes`);
     };
+    reader.readAsArrayBuffer(file);
   });
 
 })();
