@@ -4,7 +4,8 @@
 
 ## 参考文献
 
-- <https://ics.media/entry/16329/>
+- [TypeScript/webpack](https://ics.media/entry/16329/)
+- [SCSS](https://blog-and-destroy.com/25933)
 
 ## 自分用メモ
 
