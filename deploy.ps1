@@ -11,7 +11,10 @@ Remove-Item -Path ".\dist\*.*" -Recurse -Force
 # 公開ディレクトリの中身をコピー
 Copy-Item -Path ".\public\*" -Destination ".\dist\" -Recurse -Force
 
-# ビルド
+# ビルド(SCSS)
+yarn compile:sass
+
+# ビルド(TS)
 yarn build
 
 Clear-Host
