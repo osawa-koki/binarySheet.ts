@@ -1,0 +1,3 @@
+# binarySheet.ts
+
+バイナリエディタ。  
