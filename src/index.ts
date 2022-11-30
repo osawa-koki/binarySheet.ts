@@ -1,20 +1,22 @@
+import { Logger, LoggerLevel } from './Logger';
+const logger = new Logger();
 
 (() => {
   const fileButton = document.getElementById('fileButton');
 
   if (fileButton === null) {
-    //logger.error("'fileButton' is null");
+    logger.Error("'fileButton' is null");
     return;
   }
 
   fileButton.addEventListener("change", function() {
     const files = (this as HTMLInputElement).files;
     if (files === null) {
-      //logger.error("'files' is null");
+      logger.Error("'files' is null");
       return;
     }
     if (files.length === 0) {
-      //logger.error("'files' is empty");
+      logger.Error("'files' is empty");
       return;
     }
     const file = files[0];
