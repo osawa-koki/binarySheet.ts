@@ -16,6 +16,6 @@ npm i -D webpack webpack-cli typescript ts-loader
 # TypeScript設定ファイルの初期化
 tsc --init
 
-# webpack設定ファイルの初期化
-webpack init
+# SCSSファイルの監視
+yarn watch:sass
 ```
