@@ -22,26 +22,26 @@ body #binaryEditer #binarySheet #sheetHeader {
   flex-wrap: nowrap;
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: gray;
 }
-body #binaryEditer #binarySheet #sheetHeader > div {
+body #binaryEditer #binarySheet #sheetHeader .sheetHeaderComponents {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 9.0909090909%;
+  width: calc((100% - 18px) / 11);
   aspect-ratio: 2/1;
   background-color: aliceblue;
   border: 1px lightgray solid;
+}
+body #binaryEditer #binarySheet #sheetHeader .scrollbar-adjuster {
+  width: 18px;
+  background-color: gray;
 }
 body #binaryEditer #binarySheet #cellContainer {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   max-height: 500px;
   overflow-y: scroll;
-  scrollbar-width: none;
-}
-body #binaryEditer #binarySheet #cellContainer::-webkit-scrollbar {
-  display: none;
 }
 body #binaryEditer #binarySheet #cellContainer .row_index {
   background-color: lightyellow;
@@ -56,6 +56,67 @@ body #binaryEditer #binarySheet #cellContainer .row_index, body #binaryEditer #b
   display: flex;
   justify-content: center;
   align-items: center;
+}
+body #loaderContainer.loading {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  background-color: rgba(224, 255, 255, 0.5);
+}
+body #loaderContainer.loading #loader {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+body #loaderContainer.loading #loader div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: blue;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+body #loaderContainer.loading #loader div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+body #loaderContainer.loading #loader div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+body #loaderContainer.loading #loader div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+body #loaderContainer.loading #loader div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
 }
 
 .hidden {

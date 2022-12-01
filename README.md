@@ -7,6 +7,13 @@
 - [TypeScript/webpack](https://ics.media/entry/16329/)
 - [SCSS](https://blog-and-destroy.com/25933)
 
+## 実行方法
+
+```shell
+# デプロイコマンド
+.\deploy.ps1
+```
+
 ## 自分用メモ
 
 ```shell
