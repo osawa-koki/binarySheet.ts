@@ -6,10 +6,10 @@ Write-Host " ***** start deploying... *****" -ForegroundColor Green
 Write-Host ""
 
 # 出力先のフォルダの中身を削除
-Remove-Item -Path ".\dist\*.*" -Recurse -Force
+Remove-Item -Path ".\docs\*.*" -Recurse -Force
 
 # 公開ディレクトリの中身をコピー
-Copy-Item -Path ".\public\*" -Destination ".\dist\" -Recurse -Force
+Copy-Item -Path ".\public\*" -Destination ".\docs\" -Recurse -Force
 
 # ビルド(SCSS)
 yarn compile:sass
