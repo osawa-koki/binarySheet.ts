@@ -11,6 +11,7 @@ const HEX = 16;
 (() => {
   const fileButton = document.getElementById('fileButton');
   const cellContainer = document.getElementById('cellContainer');
+  const importImg = document.getElementById('importImg');
 
   if (fileButton === null) {
     logger.Error("'fileButton' is null");
@@ -18,6 +19,10 @@ const HEX = 16;
   }
   if (cellContainer === null) {
     logger.Error("'cellContainer' is null");
+    return;
+  }
+  if (importImg === null) {
+    logger.Error("'importImg' is null");
     return;
   }
 
@@ -53,6 +58,12 @@ const HEX = 16;
       // logger.Info(`Loaded ${uint8Array.length} bytes`);
 
       for (let i = 0; i < byteArray.length; i++) {
+        if (i % 10 === 0) {
+          const row_index = document.createElement('div');
+          row_index.classList.add('row_index');
+          row_index.textContent = (i / 10).toString();
+          cellContainer.appendChild(row_index);
+        }
         const cell = document.createElement('div');
         cell.classList.add('cell');
         cell.textContent = byteArray[i].toString(HEX).toUpperCase().padStart(2, "0");
@@ -61,6 +72,10 @@ const HEX = 16;
       }
     };
     reader.readAsArrayBuffer(file);
+  });
+
+  importImg.addEventListener("click", function() {
+    fileButton.click();
   });
 
 })();
