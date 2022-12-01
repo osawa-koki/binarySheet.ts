@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 100 100.00001"
+   version="1.1"
+   id="svg135"
+   sodipodi:docname="Logo.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:export-filename="Logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview137"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="2.0888419"
+     inkscape:cx="10.292785"
+     inkscape:cy="54.096963"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs132">
+    <rect
+       x="2.3696133"
+       y="3.0466457"
+       width="95.123049"
+       height="94.446016"
+       id="rect419" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1029"
+       x="-0.048121236"
+       y="-0.042595353"
+       width="1.0962425"
+       height="1.0851907">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.8721316"
+         id="feGaussianBlur1031" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1060"
+       x="-0.1275487"
+       y="-0.045162756"
+       width="1.2550974"
+       height="1.0903255">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.1435821"
+         id="feGaussianBlur1062" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       id="text417"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB';text-align:center;white-space:pre;shape-inside:url(#rect419);display:inline;fill:#000000;stroke-width:3"><tspan
+         x="4.6518752"
+         y="13.075635"
+         id="tspan1149">1010010101010100101</tspan><tspan
+         x="2.75864"
+         y="26.409011"
+         id="tspan1151">010010100010100100</tspan><tspan
+         x="3.159683"
+         y="39.742387"
+         id="tspan1153">10100101000010111110</tspan><tspan
+         x="2.9591615"
+         y="53.075764"
+         id="tspan1155">1001010101001010100</tspan><tspan
+         x="3.159683"
+         y="66.409138"
+         id="tspan1157">10101000010110011110</tspan><tspan
+         x="2.75864"
+         y="79.742512"
+         id="tspan1159">001010100100001010</tspan><tspan
+         x="2.9591615"
+         y="93.075886"
+         id="tspan1161">0100100100000111101</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:100.614px;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB';text-align:center;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke-width:4.04254;filter:url(#filter1060)"
+       x="78.107613"
+       y="70.798248"
+       id="text241-0"
+       transform="rotate(7.2715254)"><tspan
+         sodipodi:role="line"
+         id="tspan239-4"
+         x="78.107613"
+         y="70.798248"
+         style="fill:#0000ff;fill-opacity:1;stroke-width:4.04254">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:100.614px;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB';text-align:center;text-anchor:middle;fill:#0000ff;stroke-width:4.04254;fill-opacity:1"
+       x="77.82975"
+       y="71.354034"
+       id="text241"
+       transform="rotate(7.2715254)"><tspan
+         sodipodi:role="line"
+         id="tspan239"
+         x="77.82975"
+         y="71.354034"
+         style="stroke-width:4.04254;fill:#0000ff;fill-opacity:1">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80.2534px;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB';text-align:center;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke-width:3.22446;filter:url(#filter1029)"
+       x="25.467377"
+       y="72.555931"
+       id="text245-6"
+       transform="rotate(-6.3024981)"><tspan
+         sodipodi:role="line"
+         id="tspan243-5"
+         x="25.467377"
+         y="72.555931"
+         style="fill:#ff0000;fill-opacity:1;stroke-width:3.22446">0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80.2534px;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB';text-align:center;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke-width:3.22446"
+       x="27.340977"
+       y="71.120758"
+       id="text245"
+       transform="rotate(-6.3024981)"><tspan
+         sodipodi:role="line"
+         id="tspan243"
+         x="27.340977"
+         y="71.120758"
+         style="fill:#ff0000;fill-opacity:1;stroke-width:3.22446">0</tspan></text>
+  </g>
+</svg>
