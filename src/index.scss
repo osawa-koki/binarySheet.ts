@@ -1,5 +1,6 @@
 
 $column_count: 11;
+$scrollbar_width: 18;
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -29,13 +30,13 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: calc(calc(100% - 18px) / $column_count);
+          width: calc(calc(100% - #{$scrollbar_width}px) / $column_count);
           aspect-ratio: 2 / 1;
           background-color: aliceblue;
           border: 1px lightgray solid;
         }
         .scrollbar-adjuster {
-          width: 18px;
+          width: #{$scrollbar_width}px;
           background-color: gray;
         }
       }
