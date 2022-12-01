@@ -24,15 +24,19 @@ body {
         flex-wrap: nowrap;
         position: sticky;
         top: 0;
-        background-color: white;
-        > div {
+        background-color: gray;
+        .sheetHeaderComponents {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: calc(100% / $column_count);
+          width: calc(calc(100% - 18px) / $column_count);
           aspect-ratio: 2 / 1;
           background-color: aliceblue;
           border: 1px lightgray solid;
+        }
+        .scrollbar-adjuster {
+          width: 18px;
+          background-color: gray;
         }
       }
       #cellContainer {
@@ -40,10 +44,10 @@ body {
         grid-template-columns: repeat($column_count, 1fr);
         max-height: 500px;
         overflow-y: scroll;
-        scrollbar-width: none;
-        &::-webkit-scrollbar{
-          display:none;
-        }
+        // scrollbar-width: none;
+        // &::-webkit-scrollbar{
+        //   display:none;
+        // }
         .row_index {
           background-color: lightyellow;
           border-right: 1px yellow solid;
