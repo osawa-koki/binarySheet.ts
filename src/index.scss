@@ -1,0 +1,68 @@
+
+$column_count: 11;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  #binaryEditer {
+    max-width: 800px;
+    margin: 50px auto;
+    #importExportBox {
+      #importImg {
+        border: 1px lightgray solid;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    #binarySheet {
+      position: relative;
+      margin-top: 50px;
+      border: 1px gray solid;
+      #sheetHeader {
+        display: flex;
+        flex-wrap: nowrap;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        > div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: calc(100% / $column_count);
+          aspect-ratio: 2 / 1;
+          background-color: aliceblue;
+          border: 1px lightgray solid;
+        }
+      }
+      #cellContainer {
+        display: grid;
+        grid-template-columns: repeat($column_count, 1fr);
+        max-height: 500px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+          display:none;
+        }
+        .row_index {
+          background-color: lightyellow;
+          border-right: 1px yellow solid;
+        }
+        .cell {
+          border-right: 1px lightgray solid;
+          border-bottom: 1px lightgray solid;
+          cursor: crosshair;
+        }
+        .row_index, .cell {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

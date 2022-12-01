@@ -1,0 +1,65 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+body #binaryEditer {
+  max-width: 800px;
+  margin: 50px auto;
+}
+body #binaryEditer #importExportBox #importImg {
+  border: 1px lightgray solid;
+  cursor: pointer;
+}
+body #binaryEditer #importExportBox #importImg:hover {
+  opacity: 0.8;
+}
+body #binaryEditer #binarySheet {
+  position: relative;
+  margin-top: 50px;
+  border: 1px gray solid;
+}
+body #binaryEditer #binarySheet #sheetHeader {
+  display: flex;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+body #binaryEditer #binarySheet #sheetHeader > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.0909090909%;
+  aspect-ratio: 2/1;
+  background-color: aliceblue;
+  border: 1px lightgray solid;
+}
+body #binaryEditer #binarySheet #cellContainer {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  max-height: 500px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+body #binaryEditer #binarySheet #cellContainer::-webkit-scrollbar {
+  display: none;
+}
+body #binaryEditer #binarySheet #cellContainer .row_index {
+  background-color: lightyellow;
+  border-right: 1px yellow solid;
+}
+body #binaryEditer #binarySheet #cellContainer .cell {
+  border-right: 1px lightgray solid;
+  border-bottom: 1px lightgray solid;
+  cursor: crosshair;
+}
+body #binaryEditer #binarySheet #cellContainer .row_index, body #binaryEditer #binarySheet #cellContainer .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=index.css.map */
