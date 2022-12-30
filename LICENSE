@@ -186,7 +186,11 @@
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
+<<<<<<< HEAD
    Copyright [2022] [osawa koki]
+=======
+   Copyright [yyyy] [name of copyright owner]
+>>>>>>> e770ac42ffa7e0ca8c0cc747d29ab11f8c783fd4
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
