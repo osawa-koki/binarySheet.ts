@@ -2,6 +2,8 @@
 
 バイナリエディタ。  
 
+![成果物](./fruit.gif)  
+
 ## 参考文献
 
 - [TypeScript/webpack](https://ics.media/entry/16329/)
