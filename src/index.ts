@@ -40,10 +40,12 @@ const HEX = 16;
       const files = (this as HTMLInputElement).files;
       if (files === null) {
         logger.Error("'files' is null");
+        loaderContainer.classList.remove('loading');
         return;
       }
       if (files.length === 0) {
         logger.Error("'files' is empty");
+        loaderContainer.classList.remove('loading');
         return;
       }
       const file = files[0];
@@ -55,6 +57,7 @@ const HEX = 16;
         const arrayBuffer = this.result;
         if (arrayBuffer === null) {
           logger.Error("'arrayBuffer' is null");
+          loaderContainer.classList.remove('loading');
           return;
         }
         const dataView = new DataView((arrayBuffer as ArrayBuffer));
